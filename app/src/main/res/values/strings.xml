@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SaigeQuiz</string>
+    <string name="welcome_message">Welcome to my first app</string>
+    <string name="true_button">"True!"</string>
+    <string name="false_button">"False!"</string>
+    <string name="question_text">"The capital city of North Carolina is Charlotte </string>
+    <string name="correct_toast">"That is correct!  Good job!"</string>
+    <string name="incorrect_toast">"That is incorrect"</string>
+    <string name="previous_button">"Back"</string>
+    <string name="next_button">"Next"</string>
+    <string name="question_one">"Canada is south of the United States"</string>
+    <string name="question_two">"The first in the Union was Delaware"</string>
+    <string name="question_three">"The thirteenth state in the Union was North Carolina"</string>
+    <string name="question_four">"Lettuce goes on a BLT sandwich"</string>
+    <string name="cheat_button">"Cheat!"</string>
+    <string name="warning_text">"Are you sure you want to do this?"</string>
+    <string name="show_answer_button1">Show Answer</string>
+    <string name="judgement_toast">Cheating is wrong</string>
+</resources>
