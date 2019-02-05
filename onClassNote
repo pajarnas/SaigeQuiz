@@ -1,0 +1,47 @@
+launch app = onCreate() onStart() onResume()
+current app is in the resume state
+user press back key = onPause() onStop() onDestory
+press Home onPause() onStop() pause state is visable but not interacting with users
+select the recent activity then relaunch the app, this will call onCreate() onStop() onResume()
+one app may have many activities , but only one is active, when more memory is needed, Android may kill an app!
+1 If it is not too expensive to create an app from stratch
+2 app specific into need to be saved by your program.
+if my app into stopped , be prepared that it will be killed by Android.
+
+
+@onSaveInstanceState(  )
+Bundle savedInstanceState save additional info when paused or stopped the method
+onSaveInstanceState() will be called. override it to add info to be saved, and usually we invoke the
+super method at first.
+bundle: a data structure to store info, it supports put() and get() methods.
+log: nothing
+
+@onCreate()
+mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0); //0 or assigned value.
+
+AndroidManifest.xml need mannual referactor to modify name.
+
+
+1. how to launch a new activity
+2. how to pass data to a new activity
+3. the new activity will pass some info back.
+4. tell android there is a new activity
+
+A new activity is an user interface, therefore it has a layout file. could be more than one.
+
+The intent is the message from app sending to android system. the intent here may also have some data of bundle type.
+loaded the intent.
+
+Public static Intent(Context packageContext, boolean answerIsTrue){
+    Intent intent = new Intent(packageContext, CheatActivity.class);
+    intent.putExtra(EXTRA_ANSWER_IS_TRUE,answerIsTrue);
+    return intent;
+}
+
+Main activity need to override the method:
+onActicityResult(int requesrCode,i int resultCode, intent data)
+{
+
+}
+
+getIntent() method will return a intent passing here

@@ -1,4 +1,4 @@
-package com.pajamas.saige.saigequiz;
+package edu.ucmo.sxz45880.android.GeoQuiz;
 
 public class Question {
     private int mTextResId;
