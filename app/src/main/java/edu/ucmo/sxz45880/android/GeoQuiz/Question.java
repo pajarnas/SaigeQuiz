@@ -3,6 +3,7 @@ package edu.ucmo.sxz45880.android.GeoQuiz;
 public class Question {
     private int mTextResId;
     private boolean mAnswerTrue;
+    private boolean mAnswered;
 
     public int getTextResId() {
         return mTextResId;
@@ -20,9 +21,17 @@ public class Question {
         mAnswerTrue = answerTrue;
     }
 
-    public Question(int textResId, boolean answerTrue){
+    public boolean isAnswered() {
+        return mAnswered;
+    }
+
+    public void setAnswered(boolean answered) {
+        mAnswered = answered;
+    }
+
+    public Question(int textResId, boolean answerTrue, boolean answered){
         mTextResId = textResId;
         mAnswerTrue = answerTrue;
-
+        mAnswered = answered;
     }
 }
