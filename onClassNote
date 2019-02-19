@@ -38,10 +38,11 @@ Public static Intent(Context packageContext, boolean answerIsTrue){
     return intent;
 }
 
-Main activity need to override the method:
+Main activity need to override the method:a
 onActicityResult(int requesrCode,i int resultCode, intent data)
 {
 
 }
 
 getIntent() method will return a intent passing here
+
