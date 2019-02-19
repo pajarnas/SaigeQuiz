@@ -21,12 +21,6 @@ public class Question {
         mAnswerTrue = answerTrue;
     }
 
-    public Question(int textResId, boolean answerTrue, boolean answered) {
-        mTextResId = textResId;
-        mAnswerTrue = answerTrue;
-        mAnswered = answered;
-    }
-
     public boolean isAnswered() {
         return mAnswered;
     }
@@ -34,4 +28,12 @@ public class Question {
     public void setAnswered(boolean answered) {
         mAnswered = answered;
     }
+
+    public Question(int textResId, boolean answerTrue, boolean answered){
+        mTextResId = textResId;
+        mAnswerTrue = answerTrue;
+        mAnswered = answered;
+    }
+
+
 }
